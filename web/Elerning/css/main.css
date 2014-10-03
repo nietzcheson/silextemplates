@@ -1,0 +1,10 @@
+body{
+	background: #dedede;
+}
+
+#app-content{
+	width: 100%;
+	float: left;
+	position: relative;
+	top: 100px;
+}

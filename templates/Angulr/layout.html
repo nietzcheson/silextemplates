@@ -13,15 +13,15 @@
     </head>
     <body class="ng-scope">
       <div class="app ng-scope app-header-fixed app-aside-fixed" id="app" ng-class="{'app-header-fixed':app.settings.headerFixed, 'app-aside-fixed':app.settings.asideFixed, 'app-aside-folded':app.settings.asideFolded, 'app-aside-dock':app.settings.asideDock, 'container':app.settings.container}" ui-view="">  <!-- navbar -->
-        {% include 'includes/header.html' %}
-        {% include 'includes/nav.html' %}
+        {% include 'Angulr/includes/header.html' %}
+        {% include 'Angulr/includes/nav.html' %}
       </div>
       <div class="app-content ng-scope">
         {% block body %}
 
         {% endblock %}
       </div>
-      {% include 'includes/footer.html' %}
+      {% include 'Angulr/includes/footer.html' %}
       </div>
     </body>
     <script src="{{ app.request.basepath }}/js/jquery/jquery.min.js"></script>

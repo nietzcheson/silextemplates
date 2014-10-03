@@ -33,7 +33,7 @@ $app->get('/', function () use ($app) {
 ;
 
 $app->get('/note', function () use ($app) {
-    return $app['twig']->render('views/note.html', array());
+    return $app['twig']->render('Angulr/views/note.html', array());
 })
 ->bind('note')
 ;
@@ -49,6 +49,15 @@ $app->get('/contactos', function () use ($app) {
 })
 ->bind('contactos')
 ;
+
+
+/**
+  Template E-Lerning
+*/
+
+$app->get('/elerning',function() use($app){
+  return $app['twig']->render('Elerning/vistas/modulos.html',array());
+})->bind('elerning');
 
 $app->error(function (\Exception $e, $code) use ($app) {
     if ($app['debug']) {

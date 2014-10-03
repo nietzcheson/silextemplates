@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+		<head>
+				<title>{% block title '' %} - E-Lerning</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+				<link href="{{ app.request.basepath }}/elerning/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+				<link href="{{ app.request.basepath }}/elerning/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+
+				<link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/elerning/AnimatedHeader/css/default.css" />
+				<link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/elerning/AnimatedHeader/css/component.css" />
+				<link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/elerning/VerticalTimeline/css/default.css" />
+				<link rel="stylesheet" type="text/css" href="{{ app.request.basepath }}/elerning/VerticalTimeline/css/component.css" />
+
+				<script src="{{ app.request.basepath }}/elerning/AnimatedHeader/js/modernizr.custom.js"></script>
+
+				<link href="{{ app.request.basepath }}/elerning/css/main.css" rel="stylesheet" type="text/css" />
+		</head>
+		<body>
+
+
+			{% include 'Elerning/includes/header.html' %}
+			<div id="app-content">
+				{% block body %}
+
+				{% endblock %}
+
+			</div>
+			</div>
+		</body>
+		<script src="{{ app.request.basepath }}elerning/js/jquery.min.js"></script>
+
+		<script src="{{ app.request.basepath }}/elerning/AnimatedHeader/js/classie.js"></script>
+		<script src="{{ app.request.basepath }}/elerning/AnimatedHeader/js/cbpAnimatedHeader.min.js"></script>
+
+</html>
