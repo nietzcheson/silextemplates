@@ -1,0 +1,20 @@
+{% extends "b-col-2-right.html" %}
+
+
+{% block contenido %}
+
+<ul>
+{% for usuario in usuarios %}
+<li>
+	{{ usuario.nombre }}
+</li>
+
+{% endfor %}
+</ul>
+
+
+{% endblock %}
+
+{% block aside_right %}
+
+{% endblock %}
